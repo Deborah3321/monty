@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * value - prints all values on the stack
+ * op_pall - prints all values on the stack
  * @stack: pointer to the top of the stack
  * @line_number: line number of the opcode
  */
-void value(stack_t **stack, unsigned int line_number)
+void op_pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current = *stack;
 

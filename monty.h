@@ -61,19 +61,19 @@ typedef struct instruction_s
 void execute_file(stack_t **stack);
 void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number);
 
-void push(stack_t **stack, unsigned int line_number);
-void value(stack_t **stack, unsigned int line_number);
-void my_print(stack_t **stack, unsigned int line_number);
-void pop(stack_t **stack, unsigned int line_number);
-void swap(stack_t **stack, unsigned int line_number);
-void addition(stack_t **stack, unsigned int line_number);
-void nothing(stack_t **stack, unsigned int line_number);
-void difference(stack_t **stack, unsigned int line_number);
-void divide(stack_t **stack, unsigned int line_number);
-void multiplication(stack_t **stack, unsigned int line_number);
-void modulus(stack_t **stack, unsigned int line_number);
-void my_putchar(stack_t **stack, unsigned int line_number);
-void print_string(stack_t **stack, unsigned int line_number);
+void op_push(stack_t **stack, unsigned int line_number);
+void op_pall(stack_t **stack, unsigned int line_number);
+void op_pint(stack_t **stack, unsigned int line_number);
+void op_pop(stack_t **stack, unsigned int line_number);
+void op_swap(stack_t **stack, unsigned int line_number);
+void op_add(stack_t **stack, unsigned int line_number);
+void op_nop(stack_t **stack, unsigned int line_number);
+void op_sub(stack_t **stack, unsigned int line_number);
+void op_div(stack_t **stack, unsigned int line_number);
+void op_mul(stack_t **stack, unsigned int line_number);
+void op_mod(stack_t **stack, unsigned int line_number);
+void op_pchar(stack_t **stack, unsigned int line_number);
+void op_pstr(stack_t **stack, unsigned int line_number);
 
 /* Stack helper functions */
 stack_t *add_node(stack_t **stack, const int n);

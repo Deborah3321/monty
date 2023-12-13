@@ -5,9 +5,9 @@
  * @stack: double pointer to the head of the stack
  * @line_number: current line number in the file
  */
-void divide(stack_t **stack, unsigned int line_number)
+void op_div(stack_t **stack, unsigned int line_number)
 {
-	int outcome;
+	int result;
 	stack_t *temp;
 
 	if (*stack == NULL || (*stack)->next == NULL)
@@ -22,8 +22,8 @@ void divide(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%d: division by zero\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	outcome = temp->next->n / temp->n;
-	temp->next->n = outcome;
+	result = temp->next->n / temp->n;
+	temp->next->n = result;
 	*stack = temp->next;
 	free(temp);
 }

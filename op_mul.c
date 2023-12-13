@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * multiplication - multiplies the second top element of the stack with the top element
+ * op_mul - multiplies the second top element of the stack with the top element
  * @stack: double pointer to the head of the stack
  * @line_number: current line number in the file
  */
-void multiplication(stack_t **stack, unsigned int line_number)
+void op_mul(stack_t **stack, unsigned int line_number)
 {
 	int result;
 	stack_t *temp;
